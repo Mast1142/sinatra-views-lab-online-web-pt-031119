@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 <h1>Today</h1>
-%A #weekday
-%B #Month
-%e day of the month
-%Y #year
 <% d = DateTime.new(2019,6,16)%>
-<%=d.strftime("%A, %B %e, %Y")%>
+<%d.strftime("%A, %B %e, %Y")%>
 <p><%= d.strftime("The date is %A, %B %e, %Y") %></p>
 </html>
